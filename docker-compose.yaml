@@ -1,0 +1,9 @@
+version: "2"
+services:
+  offside_line:
+    build: .
+    image: sandersont/offside_line
+    container_name: offside_line
+    volumes:
+      - .:/opt/working
+    entrypoint: sleep 50000
